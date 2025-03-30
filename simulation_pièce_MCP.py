@@ -15,7 +15,7 @@ cp = 2000      # capacité thermique (J/(kg.K))
 k = 0.5        # conductivité thermique (W/(m.K))
 
 # Paramètres spécifiques au PCM
-L_latent = 150000   # chaleur latente (J/kg)
+L_latent = 50000   # chaleur latente (J/kg)
 T_m = 20.0          # température de fusion (°C)
 delta = 1.0         # intervalle autour de T_m pour la transition (°C)
 
