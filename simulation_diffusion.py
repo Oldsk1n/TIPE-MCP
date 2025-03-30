@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 L = 0.1             # épaisseur du mur en m
 N = 50             # nombre de points spatiaux
 dx = L / (N - 1)    # pas spatial
-
 rho = 800           # masse volumique en kg/m^3
 cp = 2000           # capacité thermique sensible en J/(kg.K)
 L_latent = 150000   # chaleur latente en J/kg
