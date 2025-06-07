@@ -2,19 +2,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Paramètres géométriques et physiques
-L = 0.1             # épaisseur du mur en m
-N = 50              # nombre de points spatiaux
+L = 0.09             # épaisseur du mur en m
+N = 500              # nombre de points spatiaux
 dx = L / (N - 1)    # pas spatial
-rho = 900           # masse volumique en kg/m^3
+rho = 800           # masse volumique en kg/m^3
 cp = 2000           # capacité thermique sensible en J/(kg.K)
-L_latent = 210000   # chaleur latente en J/kg
+L_latent = 150000   # chaleur latente en J/kg
 T_m = 58.0          # température de fusion en °C
-delta = 1.0         # intervalle autour de T_m pour le changement de phase (°C)
+delta = 5.0         # intervalle autour de T_m pour le changement de phase (°C)
 k = 0.2             # conductivité thermique en W/(m.K)
 
 # Conditions initiales et aux limites
 T_initial = 20.0    # température initiale (°C)
-T_hot = 80.0        # température imposée à gauche (°C)
+T_hot = 100.0        # température imposée à gauche (°C)
 T_cold = 20.0       # température imposée à droite (°C)
 
 # Discrétisation temporelle

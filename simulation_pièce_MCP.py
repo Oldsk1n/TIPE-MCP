@@ -15,9 +15,9 @@ cp = 2000      # capacité thermique (J/(kg.K))
 k = 0.5        # conductivité thermique (W/(m.K))
 
 # Paramètres spécifiques au PCM
-L_latent = 50000   # chaleur latente (J/kg)
+L_latent = 15e4   # chaleur latente (J/kg)
 T_m = 20.0          # température de fusion (°C)
-delta = 1.0         # intervalle autour de T_m pour la transition (°C)
+delta = 5.0         # intervalle autour de T_m pour la transition (°C)
 
 # %%
 # -------------------------------
@@ -28,9 +28,9 @@ total_time = 86400*5  # 24 h en secondes
 steps = int(total_time / dt)
 
 # Paramètres de la pièce (modèle lumpé)
-h_conv = 10         # coefficient convectif intérieur (W/(m^2.K))
-A = 1.0             # surface d'échange (m^2)
-C_room = 1e5        # capacité thermique de la pièce (J/K)
+h_conv = 10        # coefficient convectif intérieur (W/(m^2.K))
+A = 24             # surface d'échange (m^2)
+C_room = 1e4       # capacité thermique de la pièce (J/K)
 
 # Fonction de température extérieure (sinusoïdale sur 24 h)
 def T_ext(t):
